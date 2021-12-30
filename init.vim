@@ -82,3 +82,4 @@ lua require('audendana')
 colorscheme vividchalk 
 "colorscheme elflord 
 set background=dark
+set termguicolors

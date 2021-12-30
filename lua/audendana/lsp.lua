@@ -47,15 +47,6 @@ for _, lsp in ipairs(servers) do
     }
 end
 
--- OMNISHARP CSHARP LANGUAGE SERVER CUSTOMIZATION
-local pid = vim.fn.getpid()
-local omnisharp_bin = "/Users/audendana/.config/nvim/LanguageServers/omnisharp-osx/run"
-require'lspconfig'.omnisharp.setup{
-	on_attach = on_attach,
-	capabilities = capabilities,
-    cmd = { omnisharp_bin, "--languageserver" , "--hostPID", tostring(pid) };
-}
-
 -- nvim-cmp configs for auto complete
 vim.o.completeopt = 'menuone,noselect'
 
