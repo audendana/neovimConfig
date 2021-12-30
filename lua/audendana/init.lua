@@ -1,0 +1,5 @@
+require('audendana/telescope')
+--require('audendana/gitsigns')
+require('audendana/lsp')
+require('audendana/treesitter')
+require('audendana/autopairs')
